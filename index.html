@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnFinder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>InnFinder</h1>
+    </header>
+
+    <main>
+        <section class="search-form">
+            <h2>Find Your Perfect Hotel</h2>
+            <form id="searchForm">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter location"><br>
+
+                <label for="budget">Budget:</label>
+                <select id="budget" name="budget">
+                    <option value="">Any</option>
+                    <option value="low">Low</option>
+                    <option value="mid-range">Mid-range</option>
+                    <option value="premium">Premium</option>
+                </select><br>
+
+                <label for="amenities">Amenities:</label>
+                <div class="amenities-options">
+                   <label><input type="checkbox" name="amenities" value="AC"> AC</label>
+                   <label><input type="checkbox" name="amenities" value="pool"> Pool</label>
+                   <label><input type="checkbox" name="amenities" value="gym"> Gym</label>
+                   <label><input type="checkbox" name="amenities" value="parking"> Parking</label>
+                </div>
+
+
+                <label for="roomType">Room Type:</label>
+                <select id="roomType" name="roomType">
+                    <option value="">Any</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Single">Single</option>
+                    <option value="Family">Family</option>
+                    <option value="Deluxe">Deluxe</option>
+                    <option value="Premium">Premium</option>
+                </select><br>
+
+                <label for="pets">Pet-Friendly:</label>
+                <input type="checkbox" id="pets" name="pets"><br>
+
+                <label for="children">Child-Friendly:</label>
+                <input type="checkbox" id="children" name="children"><br>
+
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="results">
+            <h2>Search Results</h2>
+            <div id="resultsContainer"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 InnFinder</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

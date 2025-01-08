@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #f9f9f9; /* Light pastel background */
+    color: #333;
+}
+
+header {
+    background: #7f9d9a; 
+    color: #fff;
+    padding: 0.1em 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+main {
+    margin: 80px 20px 60px;
+    padding: 20px;
+}
+
+.search-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.search-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.search-form input,
+.search-form select {
+    margin: 5px 0 15px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f1f1f1; /* Light pastel background for inputs */
+}
+
+.search-form button {
+    background: #a0a6ff; /* Pastel blue */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background: #8d7eff; /* Slightly darker pastel blue on hover */
+}
+
+.search-form .amenities-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.search-form .amenities-options label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.results {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.results h2 {
+    margin-top: 0;
+}
+
+.result-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+footer {
+    text-align: center;
+    padding: 5px 0;
+    background: #7f9c8d; /* Soft grey-blue */
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.hotel-card img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional for rounded corners */
+    margin-bottom: 10px; /* Add space between image and text */
+}
+
+
+/* Fix alignment for the select options */
+.search-form select {
+    width: 100%;
+    padding: 10px;
+}
+
+.hotel-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
